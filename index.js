@@ -19,9 +19,9 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Configuration
-const apikey = 'isidewek';
-const capikey = 'isidewek';
-const domain = 'isidewek';
+const apikey = 'ptlc_fyBxrcjZVJRWWHvPDHz156UV1ewBiOT6dowZyXq3YU1';
+const capikey = 'ptla_HWRDGPcR52G73MspmYJrcWI6mjHYjYEjMkXQngq1lYK';
+const domain = 'https://zaymarket.mafiapnel.my.id';
 const nestid = '5';
 const egg = '15';
 const loc = '1';
@@ -57,7 +57,7 @@ async function sendTelegramMessage(chatId, message) {
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
 
-  if (username === '233' && password === '008') {
+  if (username === 'luxz' && password === '008') {
     res.json({ success: true, user: { username: 'user', role: 'admin' } });
   } else {
     res.status(401).json({ error: 'Invalid credentials' });
